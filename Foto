@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fotobudka 360</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center bg-cover bg-center text-center" style="background-image: url('https://source.unsplash.com/1600x900/?party,photo');">
+    <h1 class="text-5xl md:text-7xl font-bold text-gold mb-6">Fotobudka 360</h1>
+    <a href="#kontakt" class="bg-gold text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400 transition">Zarezerwuj teraz</a>
+  </section>
+
+  <!-- O nas -->
+  <section class="py-16 px-4 md:px-20 bg-black">
+    <div class="md:flex items-center">
+      <img src="https://source.unsplash.com/600x400/?camera,party" class="rounded-2xl shadow-lg mb-6 md:mb-0 md:mr-10" alt="O nas">
+      <div>
+        <h2 class="text-4xl font-bold text-gold mb-4">O nas</h2>
+        <p class="text-lg leading-relaxed">Jesteśmy ekipą, która uwiecznia najlepsze momenty Twojej imprezy. Nasza fotobudka 360 to gwarancja niezapomnianych wspomnień i świetnej zabawy!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section class="py-16 px-4 md:px-20 bg-black">
+    <h2 class="text-4xl font-bold text-gold mb-10 text-center">Galeria</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="https://source.unsplash.com/400x400/?event" class="rounded-xl shadow-lg" alt="Galeria">
+      <img src="https://source.unsplash.com/401x400/?party" class="rounded-xl shadow-lg" alt="Galeria">
+      <img src="https://source.unsplash.com/402x400/?fun" class="rounded-xl shadow-lg" alt="Galeria">
+    </div>
+  </section>
+
+  <!-- Cennik -->
+  <section class="py-16 px-4 md:px-20 bg-black">
+    <h2 class="text-4xl font-bold text-gold mb-10 text-center">Cennik</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="border border-gold p-6 rounded-xl text-center">
+        <h3 class="text-2xl font-bold mb-4">Pakiet Basic</h3>
+        <p class="text-lg mb-4">2 godziny wynajmu, obsługa, podkład muzyczny</p>
+        <p class="text-2xl font-bold">499 zł</p>
+      </div>
+      <div class="border border-gold p-6 rounded-xl text-center">
+        <h3 class="text-2xl font-bold mb-4">Pakiet Premium</h3>
+        <p class="text-lg mb-4">3 godziny, personalizowany film, dekoracje LED</p>
+        <p class="text-2xl font-bold">799 zł</p>
+      </div>
+      <div class="border border-gold p-6 rounded-xl text-center">
+        <h3 class="text-2xl font-bold mb-4">Pakiet VIP</h3>
+        <p class="text-lg mb-4">5 godzin, pełna oprawa, tło green screen</p>
+        <p class="text-2xl font-bold">1199 zł</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opinie -->
+  <section class="py-16 px-4 md:px-20 bg-black">
+    <h2 class="text-4xl font-bold text-gold mb-10 text-center">Opinie klientów</h2>
+    <div class="space-y-8 max-w-3xl mx-auto">
+      <div class="bg-white text-black p-6 rounded-xl shadow-lg">
+        <p>"Najlepsza atrakcja na naszym weselu! Goście byli zachwyceni."</p>
+        <span class="block text-right font-bold mt-2">— Kasia i Michał</span>
+      </div>
+      <div class="bg-white text-black p-6 rounded-xl shadow-lg">
+        <p>"Profesjonalna obsługa i super efekt końcowy — polecam każdemu!"</p>
+        <span class="block text-right font-bold mt-2">— Tomek</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="py-16 px-4 md:px-20 bg-black">
+    <h2 class="text-4xl font-bold text-gold mb-10 text-center">Kontakt</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Imię i nazwisko" class="w-full p-3 rounded-xl bg-gray-800 text-white border border-gold" required>
+      <input type="email" placeholder="Adres e-mail" class="w-full p-3 rounded-xl bg-gray-800 text-white border border-gold" required>
+      <textarea placeholder="Wiadomość" class="w-full p-3 rounded-xl bg-gray-800 text-white border border-gold" rows="5" required></textarea>
+      <button type="submit" class="bg-gold text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition">Wyślij</button>
+    </form>
+  </section>
+
+  <!-- Stopka -->
+  <footer class="bg-black text-center py-6 border-t border-gold">
+    <p class="text-sm">&copy; 2025 Fotobudka 360 | kontakt@fotobudka360.pl | IG: @fotobudka360</p>
+  </footer>
+
+  <style>
+    .text-gold { color: #FFD700; }
+    .bg-gold { background-color: #FFD700; }
+    .border-gold { border-color: #FFD700; }
+  </style>
+</body>
+</html>
